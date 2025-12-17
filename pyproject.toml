@@ -7,16 +7,15 @@ name = "freddy-backend-client"
 version = "0.1.0"
 description = "Python client for Freddy Backend API"
 requires-python = ">=3.8"
-readme = "README.md"  # Add this
-license = {text = "MIT"}  # Or your chosen license
+readme = "README.md"
+license = "MIT"
 authors = [
-    {name = "Aitronos", email = "ananthu.mn@aitronos.com"}
+    {name = "Ananthu", email = "ananthu.mn@aitronos.com"}
 ]
 keywords = ["freddy", "api", "client", "backend"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
@@ -33,7 +32,12 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["freddy_client*"]
+include = ["freddy_client", "freddy_client.*"]
 
 [tool.setuptools.package-data]
 freddy_client = ["py.typed"]
+
+[project.urls]
+Homepage = "https://github.com/Aitronos-Development/freddy-backend-client"
+Documentation = "https://github.com/Aitronos-Development/freddy-backend-client/blob/main/README.md"
+Repository = "https://github.com/Aitronos-Development/freddy-backend-client"
